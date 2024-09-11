@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas/latihan 3</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            background-color: #7a98fca1;
+        }
+        .navbar {
+            background: linear-gradient(to right, #3b30da, #f8a2c6);
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            color: #5308cc;
+        }
+        .card-title {
+            color: #8e49dd;
+            font-weight: bold;
+            font-family: monospace;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #5308cc, #ff7eb3);
+            border-style: groove;
+            transition: all 0.4s;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px rgba(161, 9, 34, 0.89);
+        }
+        .floating-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: #5a20b8;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .floating-icon:hover {
+            transform: scale(1.2);
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__bounceIn" href="#">
+                <i class="fas fa-fire-alt me-2"></i>PositifVibes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                            <i class="fas fa-info-circle me-1"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card animate__animated animate__fadeIn">
+                    <div class="card-body">
+                        <h1 class="card-title text-center mb-4 animate__animated animate__pulse animate__infinite">
+                            <hr>
+                            <i class="fas fa-search me-2"></i>Kenali Lebih Dekat!
+                        </h1>
+                        <img src="image/nells.png" alt="nells" class="img-fluid mb-4 rounded animate__animated animate__zoomIn">
+                        <hr>
+                        <p class="card-text">
+                            <i class="fas fa-quote-left text-muted me-2"></i>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem corporis amet quis nihil saepe quod itaque, magni nostrum sed, temporibus neque debitis asperiores libero doloribus eum odit mollitia modi? lo
+                            <i class="fas fa-quote-right text-muted ms-2"></i>
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatem at excepturi blanditiis, fuga ut sed saepe facilis aspernatur, nisi doloremque eius odio nam veritatis eligendi placeat. Blanditiis, iste libero.
+                        </p>
+                        
+                        <button class="btn btn-primary mt-3 animate__animated animate__heartBeat animate__repeat-3" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <i class="fas fa-info-circle me-2"></i>More Information
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="fas fa-info-circle me-2"></i>About Me</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><i class="fas fa-users me-2"></i>Saya Merupakan Mahasiswa SIK</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="fas fa-info-circle me-2"></i>More Information</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><i class="fas fa-phone-alt me-2"></i>Saya, Nelita Maharani, Mahasiswa SIK semester 3. Saya memiliki ketertarikan di bidang Konservasi dan Web-Development.
+                    Hubungi (e-mail) untuk berdiskusi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-icon animate__animated animate__bounce animate__infinite" data-bs-toggle="modal" data-bs-target="#infoModal">
+        <i class="fas fa-question-circle"></i>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

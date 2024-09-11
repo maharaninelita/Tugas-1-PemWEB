@@ -1,0 +1,86 @@
+body {
+    background-color:#071d1a;
+    border-style: initial;
+  }
+  
+  h1 {
+    color: #aecac1;
+    text-align: center;
+  }
+  
+  p {
+    font-family:'Times New Roman';
+    font-size: 20px;
+    color: #c5d1cb;
+    text-align: justify;
+  }
+
+  .c {
+    font-family: 'Tahoma';
+    font-size: small;
+    color: aliceblue;
+    text-align: center;
+  }
+
+  p {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  footer {
+    text-align: left;
+    padding: 2px;
+    background-color: #0d1f19;
+  }
+
+  .footer__container{
+    row-gap: 3rem;
+  }
+  
+  .footer__logo{
+    display: inline-table;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: var(--mb-2-5);
+    transition: .3s;
+  }
+  
+  .footer__logo-icon{
+    font-size: 1.15rem;
+    color: var(--first-color);
+  }
+  
+  .footer__logo:hover{
+    color: var(--first-color);
+  }
+  
+  .footer__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1-5);
+    color: aliceblue;
+  }
+
+  .footer__information{
+    font-size: var(--small-font-size);
+    color: rgb(175, 164, 149);
+  }
+  
+  .footer__cards{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+  }
+  .footer__card{
+    width: 35px;
+  }
+  
+  .footer__copy{
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    margin: 2rem 0 1rem;
+  }
